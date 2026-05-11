@@ -1,0 +1,8 @@
+[project]
+name = "bookshelf"
+version = "0.1.0"
+description = ""
+dependencies = [
+    "fastapi>=0.136.1"
+]
+requires-python = ">=3.13"
