@@ -5,5 +5,7 @@ description = "a python project to store books"
 dependencies = [
     "fastapi>=0.136.1",
 	"uvicorn[standard]>=0.32.0",
+	"pytest>=9.0.3",
+	"httpx2>=2.3.0",
 ]
 requires-python = ">=3.13"
