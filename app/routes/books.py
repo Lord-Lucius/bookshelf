@@ -21,4 +21,11 @@ async def get_book_by_id(book_id: int):
 
 @router.post("")
 async def create_book(item: dict):
+    for book in books:
+        if item["id"] == book["id"] or item["title"] == book["title"]:
+            raise HTTPException(status_code=409, detail="item already exists")
+
+    if item["id"] > len(books):
+        item["id"] = len(books)
+    books.append(item)
     raise HTTPException(status_code=201, detail="item created")
