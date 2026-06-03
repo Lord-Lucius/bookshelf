@@ -29,6 +29,6 @@ def test_health_returns_json_content_type(client):
 
 def test_health_body_has_message_key(client):
     response = client.get(conftest.health_url)
-    assert "message" in response.json()
-    assert "successed" in response.json()
+    assert "healthcheck" in response.json()
+    assert response.json()["healthcheck"] == "successed"
 

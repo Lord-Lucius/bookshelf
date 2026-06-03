@@ -5,7 +5,7 @@ import pytest
 
 # --- ROOT --- #
 root_url = "/"
-health_url = "/health"
+health_url = "/info/health"
 
 # --- BOOKS --- #
 get_all_books_url = "/books"
