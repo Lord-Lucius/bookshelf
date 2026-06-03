@@ -3,9 +3,9 @@ from fastapi import APIRouter, HTTPException
 router = APIRouter(prefix="/books", tags=["books"])
 
 books = [
-    {"id": 0, "title": "harry potfleur", "description": "basic desc"},
-    {"id": 1, "title": "lilo et pitch", "description": "basic desc"},
-    {"id": 2, "title": "les mondes de narnic", "description": "basic desc"},
+    {"id": 0, "title": "harry potfleur", "author": "jkrol", "year": "2005", "pages": "40", "description": "basic desc"},
+    {"id": 1, "title": "lilo et pitch", "author": "disnul", "year": "2005", "pages": "40", "description": "basic desc"},
+    {"id": 2, "title": "les mondes de narnic", "author": "peterpetitgro", "year": "2005", "pages": "40", "description": "basic desc"},
 ]
 
 @router.get("")
